@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin de empleados</title>
+    <link rel="icon" href="comercio5.jpg.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+    
+    </style>
+</head>
+<body style="color: white; background-color: #b8c0cc;">
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5">Administrador de empleados</h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="firsName">Nombres</label>
+                    <input class="form-control form-control-sm custom-input" id="firstName" type="text" >
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="lastName">Apellidos</label>
+                    <input class="form-control form-control-sm custom-input" id="lastName" type="text">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="cuil">DNI</label>
+                    <input class="form-control form-control-sm custom-input" id="cuil" type="text" >
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="rollNo">Horario</label>
+                    <input class="form-control form-control-sm custom-input" id="rollNo" type="time" min="8:00" max="21:00" >
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="email">Gmail</label>
+                    <input class="form-control form-control-sm custom-input" id="email" type="email" >
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="telefono">Materia</label>
+                    <input class="form-control form-control-sm custom-input" id="telefono" type="text" >
+                </div>
+                <div class="col-10 col-md-10">
+                    <input class="btn btn-success add.btn" type="submit" value="Enviar">                   
+                    <button id="botoncerrar" class="btn btn-danger">Cerrar Sesión</button>
+                    <button id="formulario" class="btn btn-warning">Ir al formulario</button>
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-5">
+                 <table class="table table-bordered table-dark table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Horario</th>
+                            <th>DNI</th>
+                            <th>Email</th>
+                            <th>Materia</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list">
+                        
+                    </tbody>
+                 </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="empleados.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

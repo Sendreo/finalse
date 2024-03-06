@@ -1,0 +1,85 @@
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Alumnos</title>
+  <!-- Agrega los estilos personalizados -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Incluye Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="comercio5.jpg.png">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-5 mb-5">REGISTRO DE ALUMNOS</h1>
+    </div>
+    <div class="main row justify-content-center">
+        <div class="col-12 mb-4 text-center"> <!-- Contenedor de la imagen -->
+            <img src="comercio4.jpg.png" alt="Descripción de la imagen" class="img-fluid">
+        </div>
+        <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+            
+            <div class="col-12 col-md-6 mb-4">
+                <label for="firsName">Nombres</label>
+                <input class="form-control form-control-sm" id="firstName" type="text">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="lastName">Apellidos</label>
+                <input class="form-control form-control-sm" id="lastName" type="text">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="cuil">CUIL</label>
+                <input class="form-control form-control-sm" id="cuil" type="text">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="rollNo">DNI</label>
+                <input class="form-control form-control-sm" id="rollNo" type="number">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="email">Gmail</label>
+                <input class="form-control form-control-sm" id="email" type="email">
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <label for="telefono">Teléfono</label>
+                <input class="form-control form-control-sm" id="telefono" type="text">
+            </div>
+            <div class="col-12">
+                <input class="btn btn-success btn-sm" type="submit" value="Enviar">
+                <button id="botoncerrar" class="btn btn-success btn-sm">Cerrar Sesión</button>
+                <div id="volverDiv ">
+                
+            </div>
+            </div>
+        </form>
+        <div class="col-12 mt-5">
+            <table class="table table-bordered table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>CUIL</th>
+                        <th>DNI</th>
+                        <th>Email</th>
+                        <th>Materia</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Incluye Bootstrap JS al final del cuerpo del documento -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="alumnos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

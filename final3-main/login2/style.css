@@ -1,0 +1,40 @@
+   /* Ajusta el tamaño de los inputs */
+   .form-control-sm {
+    height: 50px;
+  }
+
+  /* Añade un borde al formulario */
+  #student-form {
+    border: 2px solid #0a0a0a;
+    padding: 15px;
+    border-radius: 20px;
+    
+
+    
+  }
+
+  /* Agrega espacio entre los elementos del formulario */
+  #student-form .mb-3 {
+    margin-bottom: 10px;
+  }
+ 
+ /* style.css */
+
+body {
+    background-color: rgb(255, 255, 255) !important; /* Usa !important para forzar la prioridad */
+}
+
+label{
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+}
+
+input.form-control-sm {
+    width: 100%;
+  }
+
+
+  
